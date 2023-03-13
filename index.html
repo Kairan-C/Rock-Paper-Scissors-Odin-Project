@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script defer src="./javascript/index.js"></script>
     <title>Rock Paper Scissors</title>
 </head>
+
 <body>
-    <script src="./javascript/index.js"></script>
+    <main>
+    <header>
+        <h1 class="main-header">Rock, Paper, Scissors</h1>
+        <h2 class="result" id="result"></h2>
+    </header>
+
+    <section class="game">
+        <div class="score">
+            <div class="player">
+            <h2 class="player-score" id="player-score"></h2>
+            <img class="responsive" src="./images/gaming-panda.svg" alt="illustration of a panda playing video games">
+        </div>
+        <div class="computer">
+            <h2 class="computer-score" id="computer-score"></h2>
+            <img class="responsive" src="./images/computer.svg" alt="illustration of a computer with a dog on top and a cup of coffee besides it.">
+        </div>
+        </div>
+        <div class="buttons" id="buttons">
+            <button class="btn rock" value="rock"><img src="./images/rock.svg" alt="rock" ></button>
+            <button class="btn paper" value="paper"><img src="./images/paper.svg" alt="paper"></button>
+            <button class="btn scissors" value="scissors"><img src="./images/scissors.svg" alt="scissors"></button>
+        </div>
+    </section>
+
+    <footer>
+        <p>made by <a href="https://github.com/Khyaran">Khyaran</a>,illustrations by <a href="https://www.freepik.com/author/catalyststuff">Catalyststuff</a>, icons by <a href="https://www.freepik.com/author/pch-vector">pch-vector</a>.</p>
+    </footer>
+</main>
 </body>
+
 </html>
